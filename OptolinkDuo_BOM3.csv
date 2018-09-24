@@ -1,0 +1,16 @@
+"Stückliste ""Optolink_USB-Duo/Sniffer"" 00.410-02.00, Stand 08.09.2018. BE-Werte zusammengefasst, editiert";;;;;;
+Bezeichnung;Anzahl;Wert;Parts;Gehäuse;Lieferant;Teilenummer Lieferant
+JUMPER;2;;J1, J2;JUMP;Reichelt;JUMPER 2,54 SW
+Stiftleiste, 2pol.;1;;XS2;1X02;Reichelt;MPE 087-1-002
+Stiftleiste, 3pol.;1;;XS1;1X03;Reichelt;MPE 087-1-003
+Metallschichtwiderstand;1;1,2kOhm;R1;0207/10;Reichelt;AKA RSMF3TB 1K2
+Metallschichtwiderstand;1;10kOhm;R2;0207/10;Reichelt;VIS C1002FC100
+Metallschichtwiderstand;1;4,7k;R3;0207/10;Reichelt;VIS C4701FC100
+Metallschichtwiderstand;2;2,7kOhm;R4, R5;0207/10;Reichelt;VIS C2701FC100
+Metallschichtwiderstand;1;270 Ohm;R6;0207/10;Reichelt;K-O SFCN2700T52
+Elko, radial;1;22µF;C1;E2,5-5;Reichelt;RAD 22/63
+Keramikkondensator;1;47n;C2;C050-024X044;Reichelt;KERKO 47N
+Schottky-Diode;5;BAT42;D1, D2, D3, D4, D5;DO35-10;Reichelt;BAT 42
+NPN Transistor;3;BC547B;T1, T2, T3;TO92-CBE;Reichelt; BC 547B
+Vishay Phototransistor VEMT 2000X01;1;VEMT2000X01;VT1;VISHAY_GULLWING(R);Mouser;782-VEMT2000X01
+Vishay IRED VSMY8250;1;VSMY2850RG;VD1;VISHAY_GULLWING(R);Mouser;VSMY2850RG
