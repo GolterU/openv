@@ -1,0 +1,217 @@
+<vo_ident>
+  <devices>
+    <device>
+      <ID>2054</ID>
+      <ExtID>00</ExtID>
+      <name>GWG_BT2</name>
+      <protocol>GWG</protocol>
+      <description>Gaswandgerät mit Bedienteil BT2 und Feuerungsautomat LGM29</description>
+    </device>
+    <device>
+      <ID>2053</ID>
+      <ExtID>01</ExtID>
+      <name>GWG_VBEM</name>
+      <protocol>GWG</protocol>
+      <description>Gaswandgerät mit VR20 Regelung, Bedienteil BEM und Feuerungsautomat LGM29</description>
+    </device>
+    <device>
+      <ID>2053</ID>
+      <ExtID>02</ExtID>
+      <name>GWG_VBES</name>
+      <protocol>GWG</protocol>
+      <description>Gaswandgerät mit VR20 Regelung, Bedienteil BES und Feuerungsautomat LGM29</description>
+    </device>
+    <device>
+      <ID>2053</ID>
+      <ExtID>10</ExtID>
+      <name>GWG_VBT2</name>
+      <protocol>GWG</protocol>
+      <description>Gaswandgerät mit VR20 Regelung, Bedienteil BT2 und Feuerungsautomat LGM29</description>
+    </device>
+    <device>
+      <ID>2053</ID>
+      <ExtID>08</ExtID>
+      <name>GWG_VWMS</name>
+      <protocol>GWG</protocol>
+      <description>Gaswandgerät mit VR20 Regelung, Bedienteil BES im Wandmontagesockel WMS und Feuerungsautomat LGM29</description>
+    </device>
+    <device>
+      <ID>20B4</ID>
+      <name>V050HK1M</name>
+      <protocol>KW</protocol>
+      <description>Vitotronic 050 HK1M</description>
+    </device>
+    <device>
+      <ID>20AC</ID>
+      <name>V050HK1S</name>
+      <protocol>KW</protocol>
+      <description>Vitotronic 050 HK1S</description>
+    </device>
+    <device>
+      <ID>20AA</ID>
+      <name>V050HK1W</name>
+      <protocol>KW</protocol>
+      <description>Vitotronic 050 HK1W</description>
+    </device>
+    <device>
+      <ID>20AD</ID>
+      <name>V050HK3S</name>
+      <protocol>KW</protocol>
+      <description>Vitotronic 050 HK3S</description>
+    </device>
+    <device>
+      <ID>20AB</ID>
+      <name>V050HK3W</name>
+      <protocol>KW</protocol>
+      <description>Vitotronic 050 HK3W</description>
+    </device>
+    <device>
+      <ID>20A0</ID>
+      <name>V100GC1</name>
+      <protocol>KW</protocol>
+      <description>Vitotronic 100 GC1</description>
+    </device>
+    <device>
+      <ID>2091</ID>
+      <name>V100KC2</name>
+      <protocol>KW</protocol>
+      <description>Vitotronic 100 KC2</description>
+    </device>
+    <device>
+      <ID>2092</ID>
+      <name>V150KB1</name>
+      <protocol>KW</protocol>
+      <description>Vitotronic 150 KB1</description>
+    </device>
+    <device>
+      <ID>20A4</ID>
+      <name>V200GW1</name>
+      <protocol>KW</protocol>
+      <description>Vitotronic 200 GW1</description>
+    </device>
+    <device>
+      <ID>2094</ID>
+      <name>V200KW1</name>
+      <protocol>KW</protocol>
+      <description>Vitotronic 200 KW1</description>
+    </device>
+    <device>
+      <ID>2098</ID>
+      <name>V200KW2</name>
+      <protocol>KW</protocol>
+      <description>Vitotronic 200 KW2</description>
+    </device>
+    <device>
+      <ID>20A5</ID>
+      <name>V300GW2</name>
+      <protocol>KW</protocol>
+      <description>Vitotronic 300 GW2</description>
+    </device>
+    <device>
+      <ID>209C</ID>
+      <name>V300KW3</name>
+      <protocol>KW</protocol>
+      <description>Vitotronic 300 KW3</description>
+    </device>
+    <device>
+      <ID>20B8</ID>
+      <name>V333MW1</name>
+      <protocol>300</protocol>
+      <description>Vitotronic 333 MW1</description>
+    </device>
+    <device>
+      <ID>20B9</ID>
+      <name>V333MW1S</name>
+      <protocol>300</protocol>
+      <description>Vitotronic 333 MW1S</description>
+    </device>
+    <device>
+      <ID>20BA</ID>
+      <name>V333MW2</name>
+      <protocol>300</protocol>
+      <description>Vitotronic 333 MW2</description>
+    </device>
+    <device>
+      <ID>2033</ID>
+      <name>VBC550P</name>
+      <protocol>300</protocol>
+      <description>Vitolig Pelletkessel, Vitoligno 300-P</description>
+    </device>
+    <device>
+      <ID>2032</ID>
+      <name>VBC550S</name>
+      <description>Vitolig Scheitholzkessel</description>
+    </device>
+    <device>
+      <ID>2047</ID>
+      <name>VBC700_AW</name>
+      <protocol>300</protocol>
+      <description>Vitocal-A</description>
+    </device>
+    <device>
+      <ID>2046</ID>
+      <name>VBC700_BW_WW</name>
+      <description>Vitocal-G</description>
+    </device>
+    <device>
+      <ID>20C0</ID>
+      <name>VDensHC1</name>
+      <protocol>300</protocol>
+    </device>
+    <device>
+      <ID>20C1</ID>
+      <name>VDensHC2</name>
+      <protocol>300</protocol>
+    </device>
+    <device>
+      <ID>20C2</ID>
+      <name>VDensHO1</name>
+      <protocol>300</protocol>
+    </device>
+    <device>
+      <ID>20C3</ID>
+      <name>VPendHC1</name>
+      <protocol>300</protocol>
+    </device>
+    <device>
+      <ID>20C4</ID>
+      <name>VPendHC2</name>
+      <protocol>300</protocol>
+    </device>
+    <device>
+      <ID>20C5</ID>
+      <name>VPendHO1</name>
+      <protocol>300</protocol>
+    </device>
+    <device>
+      <ID>20C6</ID>
+      <name>VPlusHC1</name>
+      <protocol>300</protocol>
+    </device>
+    <device>
+      <ID>20C7</ID>
+      <name>VPlusHC2</name>
+      <protocol>300</protocol>
+    </device>
+    <device>
+      <ID>20C8</ID>
+      <name>VPlusHO1</name>
+      <protocol>300</protocol>
+    </device>
+    <device>
+      <ID>20C9</ID>
+      <name>VScotHC1</name>
+      <protocol>300</protocol>
+    </device>
+    <device>
+      <ID>20CA</ID>
+      <name>VScotHC2</name>
+      <protocol>300</protocol>
+    </device>
+    <device>
+      <ID>20CB</ID>
+      <name>VScotHO1</name>
+      <protocol>300</protocol>
+    </device>
+  </devices>
+</vo_ident>

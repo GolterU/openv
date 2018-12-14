@@ -1,0 +1,41 @@
+<vito>
+  <devices>
+    <device ID="2054" ExtID="00FF" name="GWG_BT2" protocol="GWG" description="Gaswandgeraet mit Bedienteil BT2 und Feuerungsautomat LGM29, alle Software-Indizes" />
+    <device ID="2053" ExtID="01FF" name="GWG_VBEM" protocol="GWG" description="Gaswandgerät mit VR20 Regelung, Bedienteil BEM und Feuerungsautomat LGM29, alle Software-Indizes" />
+    <device ID="2053" ExtID="02FF" name="GWG_VBES" protocol="GWG" description="Gaswandgerät mit VR20 Regelung, Bedienteil BES und Feuerungsautomat LGM29, alle Software-Indizes" />
+    <device ID="2053" ExtID="10FF" name="GWG_VBT2" protocol="GWG" description="Gaswandgerät mit VR20 Regelung, Bedienteil BT2 und Feuerungsautomat LGM29, alle Software-Indizes" />
+    <device ID="2053" ExtID="08FF" name="GWG_VWMS" protocol="GWG" description="Gaswandgerät mit VR20 Regelung, Bedienteil BES im Wandmontagesockel WMS und Feuerungsautomat LGM29, alle Software-Indizes" />
+    <device ID="20B4" name="V050HK1M" protocol="KW2" description="Vitotronic 050 HK1M - Witterungsgeführte, digitale Heizkreisregelung für einen Heizkreis mit Mischer für die Montage an Viessmann Mischern." />
+    <device ID="20AC" name="V050HK1S" protocol="KW2" description="Vitotronic 050 HK1S - Witterungsgeführte, digitale Heizkreisregelung für einen Heizkreis mit Mischer und Speichertemperaturregelung." />
+    <device ID="20AA" name="V050HK1W" protocol="KW2" description="Vitotronic 050 HK1W - Witterungsgeführte, digitale Heizkreisregelung für einen Heizkreis mit Mischer und Speichertemperaturregelung." />
+    <device ID="20AD" name="V050HK3S" protocol="KW2" description="Vitotronic 050 HK3S - Witterungsgeführte, digitale Heizkreisregelung für maximal drei Heizkreise mit Mischer und Speichertemperaturregelung." />
+    <device ID="20AB" name="V050HK3W" protocol="KW2" description="Vitotronic 050 HK3W - Witterungsgeführte, digitale Heizkreisregelung für maximal drei Heizkreise mit Mischer und Speichertemperaturregelung." />
+    <device ID="20A0" name="V100GC1" protocol="KW2" description="Vitotronic 100 GC1" />
+    <device ID="2091" name="V100KC2" protocol="KW2" description="Vitotronic 100 KC2 Digitale Kesselregelung" />
+    <device ID="2092" name="V150KB1" protocol="KW2" description="Vitotronic 150 KB1 Waermebedarfsgefuehrte, digitale Kesselkreisregelung, für 1 Heizkreis ohne Mischer" />
+    <device ID="20A4" name="V200GW1" protocol="KW2" description="Vitotronic 200 GW1" />
+    <device ID="2094" name="V200KW1" protocol="KW2" description="Vitotronic 200 KW1 Witterungsgeführte, digitale Kessel- und Heizkreisregelung, für 1 Heizkreis ohne Mischer" />
+    <device ID="2098" name="V200KW2" protocol="KW2" description="Vitotronic 200 KW2 Witterungsgeführte, digitale Kessel- und Heizkreisregelung, für 1 Heizkreis ohne Mischer und 1 Heizkreis mit Mischer" />
+    <device ID="20A5" name="V300GW2" protocol="KW2" description="Vitotronic 300 GW2" />
+    <device ID="209C" name="V300KW3" protocol="KW2" description="Vitotronic 300 KW3 Witterungsgeführte, digitale Kessel- und Heizkreisregelung, für 1 Heizkreis ohne Mischer und 2 Heizkreisen mit Mischer" />
+    <device ID="20B8" name="V333MW1" protocol="300" description="Vitotronic 333 MW1" />
+    <device ID="20B9" name="V333MW1S" protocol="300" description="Vitotronic 333 MW1S" />
+    <device ID="20BA" name="V333MW2" protocol="300" description="Vitotronic 333 MW2 (Kaskadenregelung für Wandgeräte)" />
+    <device ID="2033" name="VBC550P" protocol="300" description="Vitolig Pelletkessel" />
+    <device ID="2032" name="VBC550S" description="Vitolig Scheitholzkessel" />
+    <device ID="2047" name="VBC700_AW" protocol="300" description="Vitocal-A" />
+    <device ID="2046" name="VBC700_BW_WW" description="Vitocal-G" />
+    <device ID="20C0" name="VDensHC1" protocol="300" />
+    <device ID="20C1" name="VDensHC2" protocol="300" />
+    <device ID="20C2" name="VDensHO1" protocol="300" />
+    <device ID="20C3" name="VPendHC1" protocol="300" />
+    <device ID="20C4" name="VPendHC2" protocol="300" />
+    <device ID="20C5" name="VPendHO1" protocol="300" />
+    <device ID="20C6" name="VPlusHC1" protocol="300" />
+    <device ID="20C7" name="VPlusHC2" protocol="300" />
+    <device ID="20C8" name="VPlusHO1" protocol="300" />
+    <device ID="20C9" name="VScotHC1" protocol="300" />
+    <device ID="20CA" name="VScotHC2" protocol="300" />
+    <device ID="20CB" name="VScotHO1" protocol="300" />
+  </devices>
+</vito>
