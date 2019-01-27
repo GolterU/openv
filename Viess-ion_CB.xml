@@ -1,0 +1,1943 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<viess-ion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!-- Änderungen der Original-XML-Datei s. Aufzeichnung ab 28.03.18 in "Hinweise_Viess-ion_1204.txt" -->
+	<addresses>
+		<address addr="088E" access="W" shortcut="Anlagenzeit" description="Interne Uhrzeit der Anlage" category="Sensor">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>date</unit>
+		</address>
+		<address addr="6513" access="R" shortcut="WW anf" description="Speicheraufheizung - Timergesteuerte Anforderung" category="Sensor">
+			<len>1</len>
+			<div>1</div>
+			<check>1</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>state</unit>
+		</address>
+		<address addr="0A10" access="R" shortcut="Ventil" description="Stellung des Umschaltventils: 1 - Heizen, 2 - Befüllen, 3 - Warmwasser" category="Sensor">
+			<len>1</len>
+			<div>1</div>
+			<check>1</check>
+			<min>1</min>
+			<max>3</max>
+			<unit>state</unit>
+		</address>
+		<address addr="7665" access="R" shortcut="HK anf" description="Anforderung an Heizkreis M2" category="Sensor">
+			<len>1</len>
+			<div>1</div>
+			<check>1</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>state</unit>
+		</address>
+		<address addr="7660" access="R" shortcut="Pumpe stat (A1)" description="Betriebszustand der internen Umwälzpumpe" category="Sensor">
+			<len>1</len>
+			<div>1</div>
+			<check>1</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>state</unit>
+		</address>
+		<address addr="0A3C" access="R" shortcut="Pumpe Lstg (A1)" description="Pumpenleistung der internen Umwälzpumpe" category="Sensor">
+			<len>1</len>
+			<div>1</div>
+			<check>1</check>
+			<min>0</min>
+			<max>100</max>
+			<unit>%</unit>
+		</address>
+		<address addr="55D3" access="R" shortcut="Verbrauch" description="Leistung des Brenners (mit/ohne??? Verluste)" category="Sensor">
+			<len>1</len>
+			<div>1</div>
+			<check>1</check>
+			<min>0</min>
+			<max>76</max>
+			<unit>%</unit>
+		</address>
+		<address addr="A303" access="R" shortcut="KT soll" description="Kessel Temperatur Soll-Wert - Timergesteuert (ohne Frostschutz)" category="Sensor">
+			<len>2</len>
+			<div>100</div>
+			<check>1</check>
+			<min>0</min>
+			<max>70</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="0802" access="R" shortcut="KT ist" description="Kessel Temperatur Ist-Wert" category="Sensor">
+			<len>2</len>
+			<div>10</div>
+			<check>1</check>
+			<min>5</min>
+			<max>70</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="0898" access="R" shortcut="RT ist" description="Raum Temperatur Ist-Wert" category="Sensor">
+			<len>2</len>
+			<div>10</div>
+			<check>1</check>
+			<min>10</min>
+			<max>35</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="3906" access="R" shortcut="Pumpe stat (M2)" description="0...Aus, 1...Ein&#xA;Status der Pumpe für Heizkreis M2" category="Sensor">
+			<len>1</len>
+			<div>1</div>
+			<check>1</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>state</unit>
+		</address>
+		<address addr="3900" access="R" shortcut="VL ist (M2)" description="Kesseltemperatur Soll-Wert zur Kompensation von ???" category="Sensor">
+			<len>2</len>
+			<div>10</div>
+			<check>0</check>
+			<min>0</min>
+			<max>70</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="3544" access="R" shortcut="VL soll M2" description="Vorlauf Warmwasser (Sensor)" category="Sensor">
+			<len>2</len>
+			<div>10</div>
+			<check>0</check>
+			<min>0</min>
+			<max>70</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="6500" access="R" shortcut="WW soll" description="WW Temperatur Soll-Wert, Anforderung" category="Sensor">
+			<len>2</len>
+			<div>10</div>
+			<check>0</check>
+			<min>5</min>
+			<max>70</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="0804" access="R" shortcut="WW ist" description="Speicher Temperatur Ist-Wert" category="Sensor">
+			<len>2</len>
+			<div>10</div>
+			<check>0</check>
+			<min>35</min>
+			<max>60</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="2900" access="R" shortcut="VL ist (A1)" description="Vorlauftemperatur Ist-Wert von Heizkreis 1" category="Sensor">
+			<len>2</len>
+			<div>10</div>
+			<check>0</check>
+			<min>0</min>
+			<max>70</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="5525" access="R" shortcut="AT ist" description="Aktuell berechnete Tiefpass-Aussentemperatur, Zeitkonstante 30 Minuten." category="Sensor">
+			<len>2</len>
+			<div>10</div>
+			<check>0</check>
+			<min>-25</min>
+			<max>40</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="5527" access="R" shortcut="AT mix" description="Aussen Temperatur gemischt (Viessmann Formel: 70% ATged + 30% ATist)" category="Sensor">
+			<len>2</len>
+			<div>10</div>
+			<check>0</check>
+			<min>-25</min>
+			<max>40</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="0808" access="R" shortcut="Abgas" description="Abgas Temperatur (Sensor)" category="Sensor">
+			<len>2</len>
+			<div>10</div>
+			<check>0</check>
+			<min>0</min>
+			<max>500</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="A302" access="R" shortcut="Mischer (M2)?" description="Mischer Ventil  in Heizkreis 2 (Sensor)" category="Sensor">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>-2</min>
+			<max>-1</max>
+			<unit>#</unit>
+		</address>
+		<address addr="A38F" access="R" shortcut="Brenner ist" description="Brennerleistung wie im Display angezeigt - bei Einst. Max. Brennerleistung beachten!!!!" category="Sensor">
+			<len>1</len>
+			<div>2</div>
+			<check>0</check>
+			<min>0</min>
+			<max>73</max>
+			<unit>%</unit>
+		</address>
+		<address addr="0886" access="R" shortcut="Betriebsstunden" description="Anzahl der Betriebsstunden des Brenners seit dem letzten Reset" category="Sensor">
+			<len>4</len>
+			<div>3600</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>h</unit>
+		</address>
+		<address addr="088A" access="R" shortcut="Brennerstarts" description="Anzahl der Brennerstarts seit dem letzten Reset" category="Sensor">
+			<len>4</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>#</unit>
+		</address>
+		<address addr="3500" access="R" shortcut="Aktuelle Betriebsart M2" description="0...Abschaltbetrieb, 1...Reduzierter Betrieb, 2...Normalbetrieb, 3...Normalbetrieb&#xA;Normaler oder reduzierter Betrieb" category="Sensor">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>3</max>
+			<unit>state</unit>
+		</address>
+		<address addr="083A" access="R" shortcut="AT Sensor" description="Aussen Temperatur (Status des  Sensors)" category="Sensor">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>0</max>
+			<unit>!</unit>
+		</address>
+		<address addr="083B" access="R" shortcut="KT Sensor" description="Kessel Temperatur, Status des  Sensors" category="Sensor">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>0</max>
+			<unit>!</unit>
+		</address>
+		<address addr="083C" access="R" shortcut="WW Sensor" description="Speicher Temperatur (Status des  Sensors)" category="Sensor">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>0</max>
+			<unit>!</unit>
+		</address>
+		<address addr="0884" access="R" shortcut="Störung" description="Nicht quittierte Störungsmeldung?" category="Sensor">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>I/0</unit>
+		</address>
+		<address addr="0A82" access="R" shortcut="Sammelstörung" description="Eingang Sammelstörung" category="Sensor">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>0</max>
+			<unit>!</unit>
+		</address>
+		<address addr="0842" access="R" shortcut="Test" description="Testparameter Pumpe externe Erweiterung" category="Sensor">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="3520" access="W" shortcut="FB an HK2" description="0...keine FB auf Heizkreis, 2...FB auf Heizkreis" category="Bedien">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>2</max>
+			<unit>state</unit>
+		</address>
+		<address addr="3302" access="W" shortcut="Spar" description="0...Aus, 1...Ein&#xA;Sparbetrieb fuer Heizkreis M2 (2. Heizkreis)Befindet sich der Heizkreis im Normalbetrieb &#xA;(Heizen mit normaler Raumtemperatur) wird beiaktivierten Sparbetrieb die &#xA;Raumtemperatur um 2 K abgesenkt.Der Sparbetrieb wird automatisch zurückgesetzt, &#xA;wenn die Scha" category="Bedien">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>I/0</unit>
+		</address>
+		<address addr="3303" access="W" shortcut="Party" description="0...Aus, 1...Ein&#xA;Partybetrieb fuer Heizkreis M2 (2. Heizkreis) Im Partybetrieb wird unabhaengig von &#xA;eingestellten Betriebs- und Zeitprogrammen geheizt und die Trinkwassererwärmung &#xA;wird freigegen; die Zirkulationspumpe wird eingeschaltet" category="Bedien">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>I/0</unit>
+		</address>
+		<address addr="3306" access="W" shortcut="RT soll" description="Einstellung der Raum Temperatur Soll-Wert im Normalbetrieb (M2)" category="Bedien">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>16</min>
+			<max>24</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="3307" access="W" shortcut="RT red" description="Einstellung der Raum Temperatur Soll-Wert im reduzierten Betrieb (M2)" category="Bedien">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>16</min>
+			<max>24</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="3308" access="W" shortcut="Party soll" description="Raum Temperatur Soll-Wert im Partybetrieb" category="Bedien">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>16</min>
+			<max>24</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="A446" access="R" shortcut="RT soll" description="Zeigt aktuell verwendete RT soll Temperatur an" category="Bedien">
+			<len>2</len>
+			<div>100</div>
+			<check>0</check>
+			<min>16</min>
+			<max>24</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="3309" access="W" shortcut="Ferien Abreise" description="Ferienprogramm Abreisezeit (HK2). Bis zur eingestellten Uhrzeit läuft die Anlage in der &#xA;eingestellten Betriebsart, danach wird in den Abschaltbetrieb umgestellt" category="Bedien">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>date</unit>
+		</address>
+		<address addr="3311" access="W" shortcut="Ferien Rückkunft" description="Ferienprogramm Rückreisezeit (HK2). Ab der eingestellten Uhrzeit geht die Anlage in &#xA;den Normalbetrieb über" category="Bedien">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>date</unit>
+		</address>
+		<address addr="3323" access="W" shortcut="Betriebsart M2" description="0...Abschalt, 1...Nur WW, 2...Heizen + WW, 3...Dauernd Reduziert, 4...Dauernd Normal &#xA;Einstellung der Betriebsart fuer den Heizkreis M2 (2. Heizkreis)(WW bei Vitotronic &#xA;050HK1M nicht möglich.Abschaltbetrieb Heizkessel und Warmwasser-Speicher werden &#xA;auf Frostschutz überwacht.Nur Warmwasserbereitung und Zirkulationspump" category="Bedien">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>4</max>
+			<unit>Wahl</unit>
+		</address>
+		<address addr="3535" access="R" shortcut="Status M2?" description="Nachtabsenkung???" category="Bedien">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>state</unit>
+		</address>
+		<address addr="3546" access="R" shortcut="KT soll HK" description="Kessel Temperatur Sollwert für Heizung" category="Bedien">
+			<len>2</len>
+			<div>10</div>
+			<check>0</check>
+			<min>0</min>
+			<max>70</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="5711" access="W" shortcut="Verbrennungsparam." description="Zugang zu Verbrennungsparametern: freischalten (9)" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>9</max>
+			<unit>I/0</unit>
+		</address>
+		<address addr="5725" access="R" shortcut="AT Sensor" description="Außentemperatursensor vorhanden (wird automatisch erkannt)" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>0</max>
+			<unit>state</unit>
+		</address>
+		<address addr="7700" access="W" shortcut="Anlageausführung" description="Heizkreis-Warmwasserschema, siehe Tabelle in Serviceanleitung" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>1</min>
+			<max>10</max>
+			<unit>Type</unit>
+		</address>
+		<address addr="7750" access="R" shortcut="Reglervariante" description="(3) Witterungsgeführt" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="7751" access="W" shortcut="UPumpe Wärmeanf." description="Verhalten der Umwälzpumpe bei Wärmeanforderung (Serviceanleitung)" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>2</max>
+			<unit>Wahl</unit>
+		</address>
+		<address addr="7752" access="R" shortcut="VL Temp Sensor" description="VL Temp Sensor für hydraulische Weiche (wird automatisch erkannt)" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>state</unit>
+		</address>
+		<address addr="7753" access="W" shortcut="Ausgang 28" description="Funktion Anschluss 28: Sammelstörung, Zirku, ext. HK-Pumpe, ext. Umwälzpumpe" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>3</max>
+			<unit>Wahl</unit>
+		</address>
+		<address addr="7754" access="R" shortcut="Solaranlage" description="Solaranlage vorhanden (wird automatisch erkannt)" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>4</max>
+			<unit>state</unit>
+		</address>
+		<address addr="7776" access="R" shortcut="LON vorhanden" description="LON Kommunikations Modul (wird automatisch erkannt)" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>state</unit>
+		</address>
+		<address addr="7777" access="W" shortcut="LON TN-#" description="LON Teilnehmernummer (Serviceanleitung)" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>1</min>
+			<max>99</max>
+			<unit>#</unit>
+		</address>
+		<address addr="7778" access="R" shortcut="―" description="Unbekannt" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="7779" access="W" shortcut="LON Fehlermanager" description="LON Modul als Fehlermanager" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>I/0</unit>
+		</address>
+		<address addr="777B" access="W" shortcut="LON Uhrzeit" description="Regelung sendet Uhrzeit (1)" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>I/0</unit>
+		</address>
+		<address addr="777D" access="R" shortcut="―" description="Unbekannt" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="777E" access="R" shortcut="―" description="Unbekannt" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="777F" access="W" shortcut="Parteien" description="Anzahl der Parteien, eine (1) od. mehrere (0)" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>I/0</unit>
+		</address>
+		<address addr="7780" access="W" shortcut="Verzögerung Störungsmeld." description="Verzögerung der Anzeige von Störungsmeldungen" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>199</max>
+			<unit>sec</unit>
+		</address>
+		<address addr="7781" access="W" shortcut="Sommerzeit" description="Sommerzeit:Manuell (0), automatisch (1), Funk (2) od. LON (3)" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>3</max>
+			<unit>Wahl</unit>
+		</address>
+		<address addr="7782" access="R" shortcut="Erdgas/Flüssiggas" description="Umstellung zw. Erdgas (0) und Flüssiggas (1)" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>state</unit>
+		</address>
+		<address addr="7783" access="R" shortcut="―" description="Unbekannt" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="7784" access="R" shortcut="―" description="Unbekannt" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="7785" access="R" shortcut="―" description="Unbekannt" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="7786" access="R" shortcut="Vorgabe" description="nicht verstellen" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="7787" access="R" shortcut="Vorgabe" description="nicht verstellen" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="7788" access="W" shortcut="Temperaturskala" description="Temperaturanzeige in °C (0) oder °F(1)" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>Wahl</unit>
+		</address>
+		<address addr="7789" access="R" shortcut="―" description="Unbekannt" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="778A" access="W" shortcut="Zusatzparameter" description="Zusatzparameter freischalten (176)" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>175</min>
+			<max>176</max>
+			<unit>I/0</unit>
+		</address>
+		<address addr="778B" access="R" shortcut="EEPROM Status" description="EEPROM Status" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>0</max>
+			<unit>!</unit>
+		</address>
+		<address addr="778C" access="R" shortcut="SW Version (1)" description="Version Regler Software (oberes Byte)" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+		</address>
+		<address addr="778D" access="R" shortcut="SW Version (2)" description="Version Regler Software (unteres Byte)" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+		</address>
+		<address addr="778E" access="R" shortcut="EEPROM Fehler" description="I2C Fehlerflag EEPROM GWG" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>!</unit>
+		</address>
+		<address addr="7790" access="W" shortcut="Dämpfung" description="Zeitkonstante (P:90) auskühlen: Wert * 10 = Minuten" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>1</min>
+			<max>199</max>
+			<unit>min(*10)</unit>
+		</address>
+		<address addr="7795" access="R" shortcut="Vitocom 100" description="Komunikation Vitocom 100 (wird automatisch erkannt)" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>state</unit>
+		</address>
+		<address addr="7797" access="W" shortcut="LON Aussentemperatur" description="LON Regelung empfängt oder sendet AT (Serviceanleitung)" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>2</max>
+			<unit>Wahl</unit>
+		</address>
+		<address addr="7798" access="R" shortcut="Anlagennummer" description="Anlagennummer" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>1</min>
+			<max>5</max>
+			<unit>#</unit>
+		</address>
+		<address addr="779B" access="W" shortcut="VL Soll ext" description="Bei Anschluss eines externen Kontaktes (potenzialfrei) an die Klemmen 2 und 3 des &#xA;Steckers 146 wird bei geschlossenem Kontakt ein Vorlaufsollwert, der von 1 bis 127 °C &#xA;einstellbar ist, vorgegeben. Bei der Kesselregelung Vitotronic 100 GC1 muss Konfi K01_.." category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>127</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="779C" access="W" shortcut="LON Intervall" description="LON Überwachungsinterval für Teilnehmer (Poll Intervall)" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>60</max>
+			<unit>min</unit>
+		</address>
+		<address addr="779D" access="R" shortcut="―" description="Unbekannt" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="779E" access="R" shortcut="―" description="Unbekannt" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="779F" access="W" shortcut="Diff temp Mischer" description="Wenn kein VL Sensor für Heizung vorhanden, wird KT soll um den Wert über VL soll gesetzt" category="A">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>40</max>
+			<unit>K</unit>
+		</address>
+		<address addr="08C0" access="R" shortcut="Kennung" description="Anlagenkennung  lt. Viessmann Protokoll" category="Anlage">
+			<len>16</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>text</unit>
+		</address>
+		<address addr="08E0" access="R" shortcut="Regelungs Nr." description="Sachnummer Regelung" category="Anlage">
+			<len>7</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>text</unit>
+		</address>
+		<address addr="1010" access="R" shortcut="Codierstecker" description="Sachnummer Codierstecker lt. Viessmann Protokoll" category="Anlage">
+			<len>7</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>text</unit>
+		</address>
+		<address addr="7507" access="R" shortcut="Fehlercode" description="Letzte Fehlermeldung + Datum" category="Anlage">
+			<len>9</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="7656" access="R" shortcut="Codierstecker" description="Interne Nummer in Anlage" category="Anlage">
+			<len>2</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>hex</unit>
+		</address>
+		<address addr="37A0" access="R" shortcut="Fernbedienung" description="Fernbedienung: ohne (0), Vitotrol 200A (1), Vitotrol 300A (2) (wird automatisch erkannt)" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>2</max>
+			<unit>state</unit>
+		</address>
+		<address addr="37A2" access="W" shortcut="Speicherlade-Vorrang" description="Aus...0, Vorrang auf Mischer…1, Ein...2, gleitender Vorrang…3-10&#xA;Speichervorrangschaltung - Während der Trinkwassererwärmung werden &#xA;Heizkreispumpen ausgeschaltet und vorhandene Mischer ganz oder teilweise &#xA;geschlossen. 2 (Anlieferungszustand) Heizkreispumpe wird abgeschaltet und &#xA;vorhandene Mischer geschlossen. 0 Keine Sp" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>2</max>
+			<unit>I/0</unit>
+		</address>
+		<address addr="37A3" access="W" shortcut="Frost Grenzwert" description="Frostschutz (ATgem), Serviceanleitung (ein = Wert -1°C, aus = Wert + 1°C)" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>-9</min>
+			<max>15</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="37A4" access="W" shortcut="Frostschutz" description="Frostschutz: Ein (0), Aus (1). Achtung: A3 beachten" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>I/0</unit>
+		</address>
+		<address addr="37A5" access="W" shortcut="Sommersparschaltung" description="0...ohne HPL-Funktion, &#xA;&gt;0...Heizkreispumpe aus, wenn AT &gt; RTsoll + 6 - Wert (zB: 5...AT &gt; RTsoll + 1 K)&#xA;Sommersparschaltung Schaltschwelle Heizkreis M2 (2. Heizkreis). Die Schaltschwelle für &#xA;die Heizkreispumpenlogik (HPL-Funktion) kann eingestellt werden; d.h. die &#xA;Heizkreispumpe wird ausgeschaltet, wenn die Aussentemperatur (AT) die Raumsolltemperatur (RTsoll" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>15</max>
+		</address>
+		<address addr="37A6" access="W" shortcut="abs. Sommersparschaltg" description="Absolute Sommersparschaltung Heizkreis M2 (2. Heizkreis). Wenn die gedämpfte &#xA;Aussentemperatur den eingestellten Wert (5 °C bis 35 °C) erreicht, wird die &#xA;Heizkreispumpe ausgeschaltet, der Mischer zugefahren und keine Anforderung an den &#xA;Kesselregler (Brenner)" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>5</min>
+			<max>36</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="37A7" access="W" shortcut="Mischersparen" description="0...ohne, 1...Mischersparfunktion&#xA;Bei Einstellung 1 wird die Mischersparfunktion von Heizkreis M2 aktiviert. Wenn der &#xA;Mischer länger als 12 Minuten in Stellung &quot;ZU&quot;." category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>I/0</unit>
+		</address>
+		<address addr="37A8" access="W" shortcut="Mischeranf." description="Anforderung vom Mischer an interne Umwälzpumpe: Aus (0), Ein (1)" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>I/0</unit>
+		</address>
+		<address addr="37A9" access="W" shortcut="HPumpe stop" description="Die Heizkreispumpe für Heizkreis M2 (2. Heizkreis) wird, wenn keine Frostgefahr &#xA;besteht, beim Übergang von Normalbetrieb auf Reduzierten Betrieb vorübergehend &#xA;abgeschaltet. Je grösser der eingestellte Wert, desto länger wird abgschaltet. Bei &#xA;Einstrel" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>15</max>
+			<unit>min</unit>
+		</address>
+		<address addr="37B0" access="W" shortcut="Witterung/RT geführt" description="0…Witterung; 1…RT(red.),Witterung(normal); 2...RT(normal),Witterung(red.); 3…RT" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>3</max>
+			<unit>Wahl</unit>
+		</address>
+		<address addr="37B2" access="W" shortcut="Raumeinflussfaktor" description="Raumeinflussfaktor VLsoll=f(RT soll,RT ist,Wert)?" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>64</max>
+			<unit>K</unit>
+		</address>
+		<address addr="37B5" access="W" shortcut="Spar Pumpe(RT)" description="Heizkreispumpenlogik-Funktion: Heizkreispumpe aus, wenn RT ist &gt; RT soll + 6 - Wert" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>8</max>
+		</address>
+		<address addr="37C5" access="W" shortcut="VL min Begrenzung" description="Elektronische Minimalbegrenzung der Vorlauftemperatur von Heizkreis 2 (M2)" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>1</min>
+			<max>127</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="37C6" access="W" shortcut="VL max Begrenzung" description="Elektronische Maximalbegrenzung der Vorlauftemperatur von Heizkreis 2 (M2)" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>10</min>
+			<max>127</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="37D3" access="W" shortcut="Neigung" description="Neigung der Heizkennlinie" category="H">
+			<len>1</len>
+			<div>10</div>
+			<check>0</check>
+			<min>0,2</min>
+			<max>3,5</max>
+			<unit>Wahl</unit>
+		</address>
+		<address addr="37D4" access="W" shortcut="Niveau" description="Niveau der Heizkennlinie" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>-13</min>
+			<max>40</max>
+			<unit>K</unit>
+		</address>
+		<address addr="37D5" access="W" shortcut="Progr. Umschalt." description="Externe Umschaltung des Betriebsprogramm: red./Abschalt (0), normal (1)" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>I/0</unit>
+		</address>
+		<address addr="37E1" access="R" shortcut="Tagsoll FB" description="Einstellen des Tagsoll-Bereichs auf der FB" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>1</min>
+			<max>1</max>
+		</address>
+		<address addr="37E2" access="W" shortcut="RT Korrektur" description="Anzeige RT Kalibrieren: RT ist - 5 + Wert/10" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>99</max>
+		</address>
+		<address addr="37E5" access="R" shortcut="HPumpe gereg." description="Drehzahlgeregelte externe Heizkreispumpe; Nein (0), Ja(1) (wird automatisch erkannt)" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>state</unit>
+		</address>
+		<address addr="37E6" access="R" shortcut="HPumpe max" description="Max. Drehzahl der Heizkreispumpe im Normalbetrieb (Vorgabe)" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>100</max>
+			<unit>%</unit>
+		</address>
+		<address addr="37E7" access="W" shortcut="HPumpe min norm" description="Min. Drehzahl der Heizkreispumpe im Normalbetrieb (100% = HPumpe max)" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>100</max>
+			<unit>%</unit>
+		</address>
+		<address addr="37E8" access="W" shortcut="HPumpe min red" description="Min. Pumpenleistung bei red. Betrieb: 0…min Drehzahl, 1…red. min Drehzahl" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>I/0</unit>
+		</address>
+		<address addr="37E9" access="W" shortcut="HPumpe red" description="Drehzahl bei reduz. Betrieb (100% = HPumpe max)" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>100</max>
+			<unit>%</unit>
+		</address>
+		<address addr="37F1" access="W" shortcut="Estrich Prgm" description="Estrich-Programm, siehe Anleitung" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>15</max>
+			<unit>Wahl</unit>
+		</address>
+		<address addr="37F2" access="W" shortcut="Zeitlimit Party" description="Partybetrieb Heizkreis M2 (2. Heizkreis) Der Partybetrieb kann zeitlich im Bereich von &#xA;1 - 12 Stunden begrenzt werden. Bei Einstellung 0 wird der Partybetrieb bei der nächsten &#xA;Umschaltung in den Normalbetrieb automatisch beendet." category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>12</max>
+			<unit>h</unit>
+		</address>
+		<address addr="37F5" access="W" shortcut="UPumpe Nachlauf (H)" description="Nachlaufzeit der internen Umwälzpumpe im angehobenen Betrieb" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>20</max>
+			<unit>min</unit>
+		</address>
+		<address addr="37F6" access="W" shortcut="UPumpe WW" description="Pumpenschaltung bei Betriebsprogramm: &quot;Nur Warmwasser&quot; (Serviceanleitung)" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>25</max>
+			<unit>#</unit>
+		</address>
+		<address addr="37F7" access="W" shortcut="UPumpe Abschalt" description="Pumpenschaltung bei Betriebsprogramm: &quot;Abschaltbetrieb&quot; (Serviceanleitung)" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>25</max>
+			<unit>#</unit>
+		</address>
+		<address addr="37F8" access="W" shortcut="Strt mod. RTsoll red" description="Ist die Außentemperatur kleiner als der eingestellte Wert, so wird im Betrieb mit &#xA;reduzierter Raumtemperatur die Raumsolltemperatur auf einen &#xA;außentemperatur-abhängigen Wert angehoben (bis zur Temperaturgrenze &#xA;entsprechend Codierung F9). Einstellung Codie" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>-61</min>
+			<max>10</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="37F9" access="W" shortcut="End mod. RTsoll red" description="Ist die Außentemperatur kleiner als der eingestellte Wert, so wird im Betrieb mit &#xA;reduzierter Raumtemperatur die Raumsolltemperatur auf den Wert der &#xA;Raumsolltemperatur im normalen Betrieb angehoben. Einstellung Codierung A3 &#xA;beachten" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>-60</min>
+			<max>10</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="37FA" access="W" shortcut="Erhöh. VL soll" description="Temperaturerhöhung der Vorlauf-Solltemperatur beim Übergang von Betrieb mit &#xA;reduzierter Raumtemperatur in den Betrieb mit normaler Raumtemperatur." category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>50</max>
+			<unit>%</unit>
+		</address>
+		<address addr="37FB" access="W" shortcut="Dauer Erhöh. VL soll " description="Zeitdauer der Temperaturerhöhung der Vorlauf-Solltemperatur beim Übergang von &#xA;Betrieb mit reduzierter Raumtemperatur in den Betrieb mit normaler Raumtemperatur" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>300</max>
+			<unit>min</unit>
+		</address>
+		<address addr="8832" access="W" shortcut="HK max" description="Maximale Heizleistung begrenzen" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>16</min>
+			<max>70</max>
+			<unit>%</unit>
+		</address>
+		<address addr="5706" access="W" shortcut="KT max" description="Max. zulässige Kessel Temperatur" category="K">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>20</min>
+			<max>127</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="5707" access="R" shortcut="―" description="Unbekannt" category="K">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="5708" access="R" shortcut="―" description="Unbekannt" category="K">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="570D" access="R" shortcut="Vorgabe" description="nicht verstellen" category="K">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="570E" access="R" shortcut="Vorgabe" description="nicht verstellen" category="K">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="571E" access="R" shortcut="―" description="Unbekannt" category="K">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="5721" access="W" shortcut="Wartungsintervall" description="Betriebstunden bis zur nächsten Wartung. Wert * 100 ergibt Stunden" category="K">
+			<len>1</len>
+			<div>0,01</div>
+			<check>0</check>
+			<min>0</min>
+			<max>100</max>
+			<unit>h</unit>
+		</address>
+		<address addr="5723" access="W" shortcut="Brennerwartung" description="Monate  bis zur nächsten Wartung" category="K">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>month</unit>
+		</address>
+		<address addr="5724" access="W" shortcut="Wartungsanzeige" description="Wartungsaufforderung &quot;Wartung&quot; wird im Display angezeigt" category="K">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>I/0</unit>
+		</address>
+		<address addr="5726" access="R" shortcut="―" description="Unbekannt" category="K">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="5728" access="R" shortcut="Intervallzündung" description="Intervallzündung (Flüssiggas) pro 24h" category="K">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>Wahl</unit>
+		</address>
+		<address addr="5729" access="R" shortcut="―" description="Unbekannt" category="K">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="572E" access="R" shortcut="Kennung Externe Erweiterung" description="nicht verstellen" category="K">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+		</address>
+		<address addr="572F" access="W" shortcut="Entlüftung/Befüllung" description="Entlüftung(1)/Befüllung(2) für Installation und Wartung" category="K">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>2</max>
+			<unit>Wahl</unit>
+		</address>
+		<address addr="5730" access="R" shortcut="UPumpe gereg." description="Interne Umwälzpumpe ist drehzahlgeregelt (wird automatisch erkannt)" category="K">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>2</max>
+			<unit>state</unit>
+		</address>
+		<address addr="5731" access="W" shortcut="UPumpe soll" description="Solldrehzahl der internen Umwälzpumpe bei Betrieb als Kesselkreispumpe" category="K">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>100</max>
+			<unit>%</unit>
+		</address>
+		<address addr="5735" access="R" shortcut="―" description="Unbekannt" category="K">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="5738" access="R" shortcut="Brennersteuerung" description="Status der Brennersteuerung" category="K">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>0</max>
+			<unit>!</unit>
+		</address>
+		<address addr="5740" access="R" shortcut="―" description="Unbekannt" category="K">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="5741" access="R" shortcut="―" description="Unbekannt" category="K">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="5742" access="R" shortcut="―" description="Unbekannt" category="K">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="5743" access="R" shortcut="Wartungszähler???" description="Wartungszähler???" category="K">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="5744" access="R" shortcut="Tageszähler???" description="Tageszähler???" category="K">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="5745" access="R" shortcut="Wartungszähler???" description="Wartungszähler???" category="K">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="5746" access="R" shortcut="―" description="Unbekannt" category="K">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="5747" access="R" shortcut="―" description="Unbekannt" category="K">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="5748" access="R" shortcut="―" description="Unbekannt" category="K">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="7701" access="R" shortcut="Anlagentyp" description="(1) Einkessel, (0) ?" category="K">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>1</min>
+			<max>10</max>
+			<unit>Type</unit>
+		</address>
+		<address addr="6300" access="W" shortcut="WW soll" description="Warmwassersollwert einstellbar von 10 - 60 °C, über Codieradresse 56 : 1 umstellbar &#xA;auf 10 - 90 °C. Sicherheitshinweis: Max. zulässige Trinkwasser-temperatur beachten. &#xA;Temperaturregler TR an der Regelung umstellen." category="WW">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>5</min>
+			<max>70</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="6756" access="W" shortcut="WW Temp Limit" description="Warmwasser Temperatur Limit:  bis 60°C (0), über 60°C (1) (Kesselkodierstecker)" category="WW">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>Wahl</unit>
+		</address>
+		<address addr="6758" access="W" shortcut="Legionellen" description="Zusatzfunktion für Trinkwassererwärmung. Einstellung eines 2. Trinkwassersollwertes &#xA;im Bereich von 10 - 60°C bzw. 10 - 90 °C (abhängig von Codieradresse 56) Die Beheizung &#xA;des Speicher-Wassererwärmers auf diesen Sollwert erfolgt zu den im 4. Schaltzeitraum" category="WW">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>60</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="6759" access="W" shortcut="WW min" description="0...2½ K unter Soll, 1...1 K unter Soll, 2...2 K unter Soll usw. bis 10...10 K unter Soll &#xA;Der Einschaltpunkt fuer die Speicherbeheizung kann von 1 bis 10 K &#xA;(Auslieferungszustand 0 = 2,5 K) unter dem Speichersollwert verschoben werden." category="WW">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>10</max>
+			<unit>Wahl</unit>
+		</address>
+		<address addr="675B" access="W" shortcut="WW mit Hydr Weiche" description="Speicher direkt (0) od. über Hydraulische Weiche (1) angeschlossen" category="WW">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>Wahl</unit>
+		</address>
+		<address addr="6760" access="W" shortcut="Diff KT/WW soll" description="Differenz zwischen Kessel Temperatur  und  Warmwasser Soll" category="WW">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>5</min>
+			<max>25</max>
+			<unit>K</unit>
+		</address>
+		<address addr="6762" access="W" shortcut="UPumpe Nachlauf" description="Nachlauf Umwälzpumpe nach Warmwasser Bereitung" category="WW">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>15</max>
+			<unit>min</unit>
+		</address>
+		<address addr="6763" access="W" shortcut="WW Intervall" description="Regelm. Trinkwassererwärmung (Serviceanleitung)" category="WW">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>15</max>
+			<unit>Wahl</unit>
+		</address>
+		<address addr="6765" access="W" shortcut="U-Ventil Bauart" description="Bauart Umschaltventil: ohne (0), Viessmann (1), Wilo (2), Grundfos (3)" category="WW">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>1</min>
+			<max>3</max>
+			<unit>Type</unit>
+		</address>
+		<address addr="6767" access="W" shortcut="Nachheizunterdr." description="Nachheizunterdrückung wenn Warmwasser Temp über eingestellten Wert" category="WW">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>95</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="676C" access="W" shortcut="UPumpe soll(WW)" description="Solldrehzahl der Umwälzpumpen bei Warmwasser" category="WW">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>100</max>
+			<unit>%</unit>
+		</address>
+		<address addr="676D" access="R" shortcut="Anzapffunktion" description="Anzapffunktion" category="WW">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>?</unit>
+		</address>
+		<address addr="676F" access="W" shortcut="WW max" description="Max. Brennerleistung bei Warmwasserbereitung" category="WW">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>100</max>
+			<unit>%</unit>
+		</address>
+		<address addr="6771" access="W" shortcut="Zirku  1.Sollwert" description="Zirku steuerung (Ein, Aus, Zeitprogramm) nach 1.Sollwert" category="WW">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>2</max>
+			<unit>Wahl</unit>
+		</address>
+		<address addr="6772" access="W" shortcut="Zirku  2.Sollwert" description="Zirku steuerung (Ein, Aus, Zeitprogramm) nach 2.Sollwert" category="WW">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>2</max>
+			<unit>Wahl</unit>
+		</address>
+		<address addr="6773" access="W" shortcut="Zirkupumpe" description="Zirkulationspumpe Ein/Aus nach Timer und Intervalprogramm" category="WW">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>7</max>
+			<unit>Wahl</unit>
+		</address>
+		<address addr="2000" access="W" shortcut="A1 Mo" description="Schaltzeiten der Heizung (Heizkreis 1) am Montag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="2008" access="W" shortcut="A1 Di" description="Schaltzeiten der Heizung (Heizkreis 1) am Dienstag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="2010" access="W" shortcut="A1 Mi" description="Schaltzeiten der Heizung (Heizkreis 1) am Mittwoch" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="2018" access="W" shortcut="A1 Do" description="Schaltzeiten der Heizung (Heizkreis 1) am Donnerstag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="2020" access="W" shortcut="A1 Fr" description="Schaltzeiten der Heizung (Heizkreis 1) am Freitag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="2028" access="W" shortcut="A1 Sa" description="Schaltzeiten der Heizung (Heizkreis 1) am Samstag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="2030" access="W" shortcut="A1 So" description="Schaltzeiten der Heizung (Heizkreis 1) am Sonntag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="2100" access="W" shortcut="WW1 Mo" description="Schaltzeiten für Warmwasser am Montag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="2108" access="W" shortcut="WW1 Di" description="Schaltzeiten für Warmwasser am Dienstag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="2110" access="W" shortcut="WW1 Mi" description="Schaltzeiten für Warmwasser am Mittwoch" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="2118" access="W" shortcut="WW1 Do" description="Schaltzeiten für Warmwasser am Donnerstag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="2120" access="W" shortcut="WW1 Fr" description="Schaltzeiten für Warmwasser am Freitag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="2128" access="W" shortcut="WW1 Sa" description="Schaltzeiten für Warmwasser am Samstag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="2130" access="W" shortcut="WW1 So" description="Schaltzeiten für Warmwasser am Sonntag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="2200" access="W" shortcut="Zirk1 Mo" description="Schaltzeiten für Zirkulationspumpe am Montag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="2208" access="W" shortcut="Zirk1 Di" description="Schaltzeiten für Zirkulationspumpe am Dienstag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="2210" access="W" shortcut="Zirk1 Mi" description="Schaltzeiten für Zirkulationspumpe am Mittwoch" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="2218" access="W" shortcut="Zirk1 Do" description="Schaltzeiten für Zirkulationspumpe am Donnerstag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="2220" access="W" shortcut="Zirk1 Fr" description="Schaltzeiten für Zirkulationspumpe am Freitag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="2228" access="W" shortcut="Zirk1 Sa" description="Schaltzeiten für Zirkulationspumpe am Samstag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="2230" access="W" shortcut="Zirk1 So" description="Schaltzeiten für Zirkulationspumpe am Sonntag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="3000" access="W" shortcut="M2 Mo" description="Schaltzeiten der Heizung (Heizkreis 2) am Montag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="3008" access="W" shortcut="M2 Di" description="Schaltzeiten der Heizung (Heizkreis 2) am Dienstag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="3010" access="W" shortcut="M2 Mi" description="Schaltzeiten der Heizung (Heizkreis 2) am Mittwoch" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="3018" access="W" shortcut="M2 Do" description="Schaltzeiten der Heizung (Heizkreis 2) am Donnerstag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="3020" access="W" shortcut="M2 Fr" description="Schaltzeiten der Heizung (Heizkreis 2) am Freitag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="3028" access="W" shortcut="M2 Sa" description="Schaltzeiten der Heizung (Heizkreis 2) am Samstag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="3030" access="W" shortcut="M2 So" description="Schaltzeiten der Heizung (Heizkreis 2) am Sonntag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="3100" access="W" shortcut="WW2 Mo" description="Schaltzeiten für Warmwasser am Montag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="3108" access="W" shortcut="WW2 Di" description="Schaltzeiten für Warmwasser am Dienstag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="3110" access="W" shortcut="WW2 Mi" description="Schaltzeiten für Warmwasser am Mittwoch" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="3118" access="W" shortcut="WW2 Do" description="Schaltzeiten für Warmwasser am Donnerstag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="3120" access="W" shortcut="WW2 Fr" description="Schaltzeiten für Warmwasser am Freitag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="3128" access="W" shortcut="WW2 Sa" description="Schaltzeiten für Warmwasser am Samstag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="3130" access="W" shortcut="WW2 So" description="Schaltzeiten für Warmwasser am Sonntag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="3200" access="W" shortcut="Zirk2 Mo" description="Schaltzeiten für Zirkulationspumpe am Montag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="3208" access="W" shortcut="Zirk2 Di" description="Schaltzeiten für Zirkulationspumpe am Dienstag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="3210" access="W" shortcut="Zirk2 Mi" description="Schaltzeiten für Zirkulationspumpe am Mittwoch" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="3218" access="W" shortcut="Zirk2 Do" description="Schaltzeiten für Zirkulationspumpe am Donnerstag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="3220" access="W" shortcut="Zirk2 Fr" description="Schaltzeiten für Zirkulationspumpe am Freitag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="3228" access="W" shortcut="Zirk2 Sa" description="Schaltzeiten für Zirkulationspumpe am Samstag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="3230" access="W" shortcut="Zirk2 So" description="Schaltzeiten für Zirkulationspumpe am Sonntag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="4000" access="W" shortcut="M3 Mo" description="Schaltzeiten der Heizung (Heizkreis 3) am Montag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="4008" access="W" shortcut="M3 Di" description="Schaltzeiten der Heizung (Heizkreis 3) am Dienstag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="4010" access="W" shortcut="M3 Mi" description="Schaltzeiten der Heizung (Heizkreis 3) am Mittwoch" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="4018" access="W" shortcut="M3 Do" description="Schaltzeiten der Heizung (Heizkreis 3) am Donnerstag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="4020" access="W" shortcut="M3 Fr" description="Schaltzeiten der Heizung (Heizkreis 3) am Freitag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="4028" access="W" shortcut="M3 Sa" description="Schaltzeiten der Heizung (Heizkreis 3) am Samstag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="4030" access="W" shortcut="M3 So" description="Schaltzeiten der Heizung (Heizkreis 3) am Sonntag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="4100" access="W" shortcut="WW3 Mo" description="Schaltzeiten für Warmwasser am Montag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="4108" access="W" shortcut="WW3 Di" description="Schaltzeiten für Warmwasser am Dienstag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="4110" access="W" shortcut="WW3 Mi" description="Schaltzeiten für Warmwasser am Mittwoch" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="4118" access="W" shortcut="WW3 Do" description="Schaltzeiten für Warmwasser am Donnerstag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="4120" access="W" shortcut="WW3 Fr" description="Schaltzeiten für Warmwasser am Freitag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="4128" access="W" shortcut="WW3 Sa" description="Schaltzeiten für Warmwasser am Samstag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="4130" access="W" shortcut="WW3 So" description="Schaltzeiten für Warmwasser am Sonntag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="4200" access="W" shortcut="Zirk3 Mo" description="Schaltzeiten für Zirkulationspumpe am Montag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="4208" access="W" shortcut="Zirk3 Di" description="Schaltzeiten für Zirkulationspumpe am Dienstag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="4210" access="W" shortcut="Zirk3 Mi" description="Schaltzeiten für Zirkulationspumpe am Mittwoch" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="4218" access="W" shortcut="Zirk3 Do" description="Schaltzeiten für Zirkulationspumpe am Donnerstag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="4220" access="W" shortcut="Zirk3 Fr" description="Schaltzeiten für Zirkulationspumpe am Freitag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="4228" access="W" shortcut="Zirk3 Sa" description="Schaltzeiten für Zirkulationspumpe am Samstag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="4230" access="W" shortcut="Zirk3 So" description="Schaltzeiten für Zirkulationspumpe am Sonntag" category="Timer">
+			<len>8</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>24</max>
+			<unit>time</unit>
+		</address>
+		<address addr="0818" access="R" shortcut="RL ist" description="Rücklauf Ist-Wert" category="Other">
+			<len>2</len>
+			<div>10</div>
+			<check>0</check>
+			<min>0</min>
+			<max>127</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="0842" access="R" shortcut="Pumpe (M2)" description="Pumpe Heizkreis 2 Status (Externe Erweiterung) (Sensor)" category="Other">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>state</unit>
+		</address>
+		<address addr="3301" access="R" shortcut="Status" category="Test">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>state</unit>
+		</address>
+		<address addr="353A" access="R" shortcut="Party Timer" description="Zeit bis zum Ende des Partymodus (Wert * 20min)" category="Other">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>100</max>
+			<unit>min</unit>
+		</address>
+		<address addr="6515" access="R" shortcut="Zirkupumpe" description="Betriebszustand der Zirkulationspumpe" category="Other">
+			<len>2</len>
+			<div>10</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>state</unit>
+		</address>
+		<address addr="555A" access="R" shortcut="KT soll (5)" description="Kessel Temperatur Soll-Wert - Timergesteuert (mit Frostschutz)" category="Other">
+			<len>2</len>
+			<div>10</div>
+			<check>0</check>
+			<min>5</min>
+			<max>70</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="5523" access="R" shortcut="AT ged" description="Aussen Temperatur gedämpft; Simulierter RT Verlauf ohne Fremdeinfluß (Bedien)" category="Other">
+			<len>2</len>
+			<div>10</div>
+			<check>0</check>
+			<min>-25</min>
+			<max>40</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="6517" access="R" shortcut="WW Bereitung?" category="Test">
+			<len>2</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>hex</unit>
+		</address>
+		<address addr="0812" access="R" shortcut="WW gl" description="Speicher Temperatur  (geglättet?) (Bedien)" category="Other">
+			<len>2</len>
+			<div>10</div>
+			<check>0</check>
+			<min>5</min>
+			<max>70</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="A3C3" access="R" shortcut="WW ist" description="WW Speicher Temperatur (Sensor)" category="Other">
+			<len>2</len>
+			<div>100</div>
+			<check>0</check>
+			<min>0</min>
+			<max>70</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="A309" access="R" shortcut="KT ist" description="Kessel Temperatur Ist-wert (Sensor)" category="Other">
+			<len>2</len>
+			<div>100</div>
+			<check>0</check>
+			<min>0</min>
+			<max>70</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="3549" access="R" shortcut="ext. Betr.Art Umschalt" description="0...Aus, 1...Ein&#xA;externe Betriebsartenumschaltung ueber Eingang 143 Pin 1, abhaengig von Kodierung 91 &#xA;Richtung der Umschaltung abhaengig von der Kodierung D5" category="Other">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>state</unit>
+		</address>
+		<address addr="A382" access="R" shortcut="Betrmod Anlage / Kessel" description="0...HVAC_AUTO, 1...HVAC_HEAT, 2...HVAC_MRNG_WRMUP, 3...HVAC_COOL, &#xA;4...HVAC_NIGHT_PURGE, 5...HVAC_PRE_COOL, 6...HVAC_OFF, 7...HVAC_TEST, &#xA;8...HVAC_EMERG_HEAT, 9...HVAC_FAN_ONLY, 10...HVAC_FREE_COOL, 11...HVAC_ICE, &#xA;110...HVAC_SLAVE_ACTIVE, 111...HVAC_LOW_FIRE, 112...HVAC_HIGH_FIRE, &#xA;100...HVAC_FLOW_TEMP, 2" category="Other">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>-1</max>
+			<unit>state</unit>
+		</address>
+		<address addr="A385" access="R" shortcut="VL soll der HK Regler" description="Vorlauf-Solltemperatur der Heizkreisregler" category="Other">
+			<len>2</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>65535</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="A3C5" access="R" shortcut="eff. WW soll" description="Ausgangsnetzvariable des DHWC (Domestic Hot Water Controller Object) &#xA;Netzvariablenname: nvoDHWCEffSetpt SNVT Datentype: SNVT_temp_p &#xA;Ausgabe / Anzeige: Aktuelle Warmwasser- Solltemperatur in °C" category="Other">
+			<len>2</len>
+			<div>100</div>
+			<check>0</check>
+			<min>0</min>
+			<max>66</max>
+			<unit>°C</unit>
+		</address>
+	</addresses>
+</viess-ion>
