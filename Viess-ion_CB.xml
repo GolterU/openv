@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <viess-ion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<!-- Änderungen der Original-XML-Datei s. Aufzeichnung ab 28.03.18 in "Hinweise_Viess-ion_1204.txt" -->
+<!-- 
+Änderungen der Original-XML-Datei s. Aufzeichnung ab 28.03.18 in "Hinweise_Viess-ion_1204.txt" 
+Spätere Änderungen s. "Historie_Viess-ion_CB.xml.txt"
+Stand: 24.04.18 21:53 Uhr
+-->
 	<addresses>
 		<address addr="088E" access="W" shortcut="Anlagenzeit" description="Interne Uhrzeit der Anlage" category="Sensor">
 			<len>8</len>

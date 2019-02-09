@@ -1,0 +1,18 @@
+﻿Vorhergehende Änderungen an "Viess-ion_CB.xml" s. "Hinweise_Viess-ion_1204.txt"
+
+27.01.19
+Versuche mit VSC und Git/Github auf V5505. Als Remote-Repo 
+https://github.com/GolterU/openv.git verwendet.
+Änderungen in *CB.xml entspr. "Hinweise_Viess-ion_1204.txt" bis 24.04.18. 
+Zusätzlich Kennlinien-Neigung und -Niveau für Heizkreis A1 im Bereich "H"
+(Heizung) ergänzt.
+
+28.01.19
+In beiden Kennlinien-Neigungsabfragen (A1 und M2) die Division durch 10
+durch Division durch 1 ersetzt, bei unit anstelle "Wahl" "10Wahl" angegeben.
+Ansonsten steht bei Neigung immer Null, weil Viess-ion in der Registerkarte 
+"Heizung" wohl keine Dezimalstellen anzeigt. 
+"10Wahl" soll auf das Zehnfache hinweisen, zeigt dann allerdings nur "10" (also
+die ersten beiden Zeichen) an.
+Zusätzlich die Wertgrenzen von 0,2 auf 2 (unten) und 3,5 auf 35 (oben) gesetzt.
+
