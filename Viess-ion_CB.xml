@@ -3,7 +3,7 @@
 <!-- 
 Änderungen der Original-XML-Datei s. Aufzeichnung ab 28.03.18 in "Hinweise_Viess-ion_1204.txt" 
 Spätere Änderungen s. "Historie_Viess-ion_CB.xml.txt"
-Stand: 24.04.18 21:53 Uhr
+Stand: 27.01.19 22:44 Uhr
 -->
 	<addresses>
 		<address addr="088E" access="W" shortcut="Anlagenzeit" description="Interne Uhrzeit der Anlage" category="Sensor">
@@ -810,15 +810,31 @@ Stand: 24.04.18 21:53 Uhr
 			<max>127</max>
 			<unit>°C</unit>
 		</address>
-		<address addr="37D3" access="W" shortcut="Neigung" description="Neigung der Heizkennlinie" category="H">
+		<address addr="27D3" access="W" shortcut="Neigung A1" description="Neigung der Heizkennlinie Heizkreis A1" category="H">
 			<len>1</len>
-			<div>10</div>
+			<div>1</div>
 			<check>0</check>
-			<min>0,2</min>
-			<max>3,5</max>
-			<unit>Wahl</unit>
+			<min>2</min>
+			<max>35</max>
+			<unit>10Wahl</unit>
 		</address>
-		<address addr="37D4" access="W" shortcut="Niveau" description="Niveau der Heizkennlinie" category="H">
+		<address addr="27D4" access="W" shortcut="Niveau A1" description="Niveau der Heizkennlinie Heizkreis A1" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>-13</min>
+			<max>40</max>
+			<unit>K</unit>
+		</address>
+				<address addr="37D3" access="W" shortcut="Neigung M2" description="Neigung der Heizkennlinie Heizkreis M2" category="H">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>2</min>
+			<max>35</max>
+			<unit>10Wahl</unit>
+		</address>
+		<address addr="37D4" access="W" shortcut="Niveau M2" description="Niveau der Heizkennlinie Heizkreis M2" category="H">
 			<len>1</len>
 			<div>1</div>
 			<check>0</check>
