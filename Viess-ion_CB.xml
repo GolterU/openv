@@ -3,7 +3,10 @@
 <!-- 
 Änderungen der Original-XML-Datei s. Aufzeichnung ab 28.03.18 in "Hinweise_Viess-ion_1204.txt" 
 Spätere Änderungen s. "Historie_Viess-ion_CB.xml.txt"
-Stand: 27.01.19 22:44 Uhr
+Zusätzliche Einträge in der Form <comment>Test</comment> akzeptiert das Programm.
+Kategorie/Fensterzuordnung:
+Sensor/Sensor, Bedien/Bedienung, Timer/Timer, Anlage/Anlage, A/Allgemein, K/Kessel, Solar/Solar, H/Heizung, WW/Warmwasser, Other/Weitere, Test/Test
+Stand 09.02.19 23:22 Uhr
 -->
 	<addresses>
 		<address addr="088E" access="W" shortcut="Anlagenzeit" description="Interne Uhrzeit der Anlage" category="Sensor">
@@ -132,6 +135,14 @@ Stand: 27.01.19 22:44 Uhr
 			<check>0</check>
 			<min>0</min>
 			<max>70</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="0818" access="R" shortcut="RL ist" description="Kessel Rücklauf Ist-Wert" category="Sensor">
+			<len>2</len>
+			<div>10</div>
+			<check>0</check>
+			<min>0</min>
+			<max>127</max>
 			<unit>°C</unit>
 		</address>
 		<address addr="5525" access="R" shortcut="AT ist" description="Aktuell berechnete Tiefpass-Aussentemperatur, Zeitkonstante 30 Minuten." category="Sensor">
@@ -1838,14 +1849,6 @@ Stand: 27.01.19 22:44 Uhr
 			<min>0</min>
 			<max>24</max>
 			<unit>time</unit>
-		</address>
-		<address addr="0818" access="R" shortcut="RL ist" description="Rücklauf Ist-Wert" category="Other">
-			<len>2</len>
-			<div>10</div>
-			<check>0</check>
-			<min>0</min>
-			<max>127</max>
-			<unit>°C</unit>
 		</address>
 		<address addr="0842" access="R" shortcut="Pumpe (M2)" description="Pumpe Heizkreis 2 Status (Externe Erweiterung) (Sensor)" category="Other">
 			<len>1</len>

@@ -8,3 +8,8 @@ In beiden Kennlinien-Neigungsabfragen (A1 und M2) die Division durch 10 durch Di
 
 09.02.19
 Alle Versionen der Viess-ion_CB.xml auf Github im Repository https://github.com/GolterU/openv.git gespeichert.
+
+10.02.19
+Kommentierung am Anfang ..CB.xml. 
+Rücklauftemp. aus Adr. 0818 von "Other" nach "Sensor" verlegt, als Kessel-RL gekennzeichnet.
+Nach den Messwerten wahrscheinlich nicht korrekt (VL=45°C, RL=15°C).
