@@ -6,7 +6,7 @@ Spätere Änderungen s. "Historie_Viess-ion_CB.xml.txt"
 Zusätzliche Einträge in der Form <comment>Test</comment> akzeptiert das Programm.
 Kategorie/Fensterzuordnung:
 Sensor/Sensor, Bedien/Bedienung, Timer/Timer, Anlage/Anlage, A/Allgemein, K/Kessel, Solar/Solar, H/Heizung, WW/Warmwasser, Other/Weitere, Test/Test
-Stand 09.02.19 23:22 Uhr
+Stand 10.02.19 23:22 Uhr
 -->
 	<addresses>
 		<address addr="088E" access="W" shortcut="Anlagenzeit" description="Interne Uhrzeit der Anlage" category="Sensor">
