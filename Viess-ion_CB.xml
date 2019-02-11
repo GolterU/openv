@@ -6,7 +6,7 @@ Spätere Änderungen s. "Historie_Viess-ion_CB.xml.txt"
 Zusätzliche Einträge in der Form <comment>Test</comment> akzeptiert das Programm.
 Kategorie/Fensterzuordnung:
 Sensor/Sensor, Bedien/Bedienung, Timer/Timer, Anlage/Anlage, A/Allgemein, K/Kessel, Solar/Solar, H/Heizung, WW/Warmwasser, Other/Weitere, Test/Test
-Stand 10.02.19 23:22 Uhr
+Stand 11.02.19 17:45 Uhr
 -->
 	<addresses>
 		<address addr="088E" access="W" shortcut="Anlagenzeit" description="Interne Uhrzeit der Anlage" category="Sensor">
@@ -64,22 +64,6 @@ Stand 10.02.19 23:22 Uhr
 			<min>0</min>
 			<max>76</max>
 			<unit>%</unit>
-		</address>
-		<address addr="A303" access="R" shortcut="KT soll" description="Kessel Temperatur Soll-Wert - Timergesteuert (ohne Frostschutz)" category="Sensor">
-			<len>2</len>
-			<div>100</div>
-			<check>1</check>
-			<min>0</min>
-			<max>70</max>
-			<unit>°C</unit>
-		</address>
-		<address addr="0802" access="R" shortcut="KT ist" description="Kessel Temperatur Ist-Wert" category="Sensor">
-			<len>2</len>
-			<div>10</div>
-			<check>1</check>
-			<min>5</min>
-			<max>70</max>
-			<unit>°C</unit>
 		</address>
 		<address addr="3906" access="R" shortcut="Pumpe stat (M2)" description="0...Aus, 1...Ein&#xA;Status der Pumpe für Heizkreis M2" category="Sensor">
 			<len>1</len>
@@ -257,7 +241,7 @@ Stand 10.02.19 23:22 Uhr
 			<max>2</max>
 			<unit>state</unit>
 		</address>
-		<address addr="3302" access="W" shortcut="Spar" description="0...Aus, 1...Ein&#xA;Sparbetrieb fuer Heizkreis M2 (2. Heizkreis)Befindet sich der Heizkreis im Normalbetrieb &#xA;(Heizen mit normaler Raumtemperatur) wird beiaktivierten Sparbetrieb die &#xA;Raumtemperatur um 2 K abgesenkt.Der Sparbetrieb wird automatisch zurückgesetzt, &#xA;wenn die Scha" category="Bedien">
+		<address addr="3302" access="W" shortcut="Spar" description="0...Aus, 1...Ein&#xA;Sparbetrieb fuer Heizkreis M2 (2. Heizkreis)Befindet sich der Heizkreis im Normalbetrieb &#xA;(Heizen mit normaler Raumtemperatur) wird bei aktivierten Sparbetrieb die &#xA;Raumtemperatur um 2 K abgesenkt.Der Sparbetrieb wird automatisch zurückgesetzt, &#xA;wenn die Scha" category="Bedien">
 			<len>1</len>
 			<div>1</div>
 			<check>0</check>
@@ -987,6 +971,23 @@ Stand 10.02.19 23:22 Uhr
 			<max>70</max>
 			<unit>%</unit>
 		</address>
+            <address addr="A303" access="R" shortcut="KT soll" description="Kessel Temperatur Soll-Wert - Timergesteuert (ohne Frostschutz)" category="K">
+			<len>2</len>
+			<div>100</div>
+			<check>1</check>
+			<min>0</min>
+			<max>70</max>
+			<unit>°C</unit>
+		</address>
+		<address addr="0802" access="R" shortcut="KT ist" description="Kessel Temperatur Ist-Wert" category="K">
+			<len>2</len>
+			<div>10</div>
+			<check>1</check>
+			<min>5</min>
+			<max>70</max>
+			<unit>°C</unit>
+		</address>
+
 		<address addr="5706" access="W" shortcut="KT max" description="Max. zulässige Kessel Temperatur" category="K">
 			<len>1</len>
 			<div>1</div>
