@@ -81,14 +81,6 @@ Stand 10.02.19 23:22 Uhr
 			<max>70</max>
 			<unit>°C</unit>
 		</address>
-		<address addr="0898" access="R" shortcut="RT ist" description="Raum Temperatur Ist-Wert" category="Sensor">
-			<len>2</len>
-			<div>10</div>
-			<check>1</check>
-			<min>10</min>
-			<max>35</max>
-			<unit>°C</unit>
-		</address>
 		<address addr="3906" access="R" shortcut="Pumpe stat (M2)" description="0...Aus, 1...Ein&#xA;Status der Pumpe für Heizkreis M2" category="Sensor">
 			<len>1</len>
 			<div>1</div>

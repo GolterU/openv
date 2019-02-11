@@ -15,4 +15,5 @@ Rücklauftemp. aus Adr. 0818 von "Other" nach "Sensor" verlegt, als Kessel-RL ge
 Nach den Messwerten wahrscheinlich nicht korrekt (VL=45°C, RL=15°C).
 
 11.02.19
-Stand-Datum von gestern korrigiert (muss 10.02. statt 09.02. heißen).
+Stand-Datum von gestern korrigiert (muss 10.02. statt 09.02. heißen). 1.Commit
+"Raum Temperatur Ist-Wert" (0898) aus Kat. Sensor gelöscht.
