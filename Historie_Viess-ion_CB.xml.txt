@@ -18,3 +18,6 @@ Nach den Messwerten wahrscheinlich nicht korrekt (VL=45°C, RL=15°C).
 1.Commit: Stand-Datum von gestern korrigiert (muss 10.02. statt 09.02. heißen). 
 2.Commit: "Raum Temperatur Ist-Wert" (0898) aus Kat. Sensor gelöscht, wird von Fernbedienung geliefert. Ist eh immer 20°C. Raumtemp-Soll bei Kat. Bedien (3306) reicht.
 Kesseltemp Soll (A303) und Ist (0802) von kat. Sensor an Anfang Kat. Kessel verschoben.
+
+08.03.19
+Beachte beim Umsortieren der Adress-Einträge die Bedeutung des check-Eintrags. Bestimmt die Werte, die der Veränderungsprüfung durch das Programm unterliegen wenn <check>1</check> ist (nur die mit <sensor>). Der erste in der XML-Datei auftretende Wert <check>0</check> beendet die Liste der Prüfaufträge. Aktive Prüfaufträge sind im Programmfenster in Registerkarte "Sensor" grün hinterlegt.
