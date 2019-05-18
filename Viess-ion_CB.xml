@@ -225,13 +225,13 @@ Stand 11.02.19 17:45 Uhr
 			<max>0</max>
 			<unit>!</unit>
 		</address>
-		<address addr="0842" access="R" shortcut="Test" description="Testparameter Pumpe externe Erweiterung" category="Sensor">
+		<address addr="0842" access="R" shortcut="Pumpe (M2)" description="Pumpe Heizkreis 2 Status (Externe Erweiterung) (Sensor)" category="Sensor">
 			<len>1</len>
 			<div>1</div>
 			<check>0</check>
 			<min>0</min>
-			<max>-1</max>
-			<unit>?</unit>
+			<max>1</max>
+			<unit>state</unit>
 		</address>
 		<address addr="3520" access="W" shortcut="FB an HK2" description="0...keine FB auf Heizkreis, 2...FB auf Heizkreis" category="Bedien">
 			<len>1</len>
@@ -241,7 +241,7 @@ Stand 11.02.19 17:45 Uhr
 			<max>2</max>
 			<unit>state</unit>
 		</address>
-		<address addr="3302" access="W" shortcut="Spar" description="0...Aus, 1...Ein&#xA;Sparbetrieb fuer Heizkreis M2 (2. Heizkreis)Befindet sich der Heizkreis im Normalbetrieb &#xA;(Heizen mit normaler Raumtemperatur) wird bei aktivierten Sparbetrieb die &#xA;Raumtemperatur um 2 K abgesenkt.Der Sparbetrieb wird automatisch zurückgesetzt, &#xA;wenn die Scha" category="Bedien">
+		<address addr="3302" access="W" shortcut="Spar" description="0...Aus, 1...Ein&#xA;Sparbetrieb fuer Heizkreis M2 (2. Heizkreis)Befindet sich der Heizkreis im Normalbetrieb &#xA;(Heizen mit normaler Raumtemperatur) wird bei aktivierten Sparbetrieb die &#xA;Raumtemperatur um 2 K abgesenkt. Der Sparbetrieb endet automatisch mit dem naechsten &#xA;Umschalten auf Raumbeheizung mit „reduzierter Raumtemperatur." category="Sensor">
 			<len>1</len>
 			<div>1</div>
 			<check>0</check>
@@ -249,7 +249,7 @@ Stand 11.02.19 17:45 Uhr
 			<max>1</max>
 			<unit>I/0</unit>
 		</address>
-		<address addr="3303" access="W" shortcut="Party" description="0...Aus, 1...Ein&#xA;Partybetrieb fuer Heizkreis M2 (2. Heizkreis) Im Partybetrieb wird unabhaengig von &#xA;eingestellten Betriebs- und Zeitprogrammen geheizt und die Trinkwassererwärmung &#xA;wird freigegen; die Zirkulationspumpe wird eingeschaltet" category="Bedien">
+		<address addr="3303" access="W" shortcut="Party" description="0...Aus, 1...Ein&#xA;Partybetrieb fuer Heizkreis M2 (2. Heizkreis). Im Partybetrieb wird unabhaengig von &#xA;eingestellten Betriebs- und Zeitprogrammen geheizt und die Trinkwassererwärmung &#xA;wird freigegeben; die Zirkulationspumpe wird eingeschaltet.&#xA;Partybetrieb endet automatisch mit nächstem Wechsel zur Heizung &#xA;mit Normaltemperatur, spätestens nach 8 Stunden." category="Bedien">
 			<len>1</len>
 			<div>1</div>
 			<check>0</check>
@@ -1842,14 +1842,6 @@ Stand 11.02.19 17:45 Uhr
 			<min>0</min>
 			<max>24</max>
 			<unit>time</unit>
-		</address>
-		<address addr="0842" access="R" shortcut="Pumpe (M2)" description="Pumpe Heizkreis 2 Status (Externe Erweiterung) (Sensor)" category="Other">
-			<len>1</len>
-			<div>1</div>
-			<check>0</check>
-			<min>0</min>
-			<max>1</max>
-			<unit>state</unit>
 		</address>
 		<address addr="3301" access="R" shortcut="Status" category="Test">
 			<len>1</len>

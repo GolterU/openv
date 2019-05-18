@@ -18,3 +18,11 @@ Nach den Messwerten wahrscheinlich nicht korrekt (VL=45°C, RL=15°C).
 1.Commit: Stand-Datum von gestern korrigiert (muss 10.02. statt 09.02. heißen). 
 2.Commit: "Raum Temperatur Ist-Wert" (0898) aus Kat. Sensor gelöscht, wird von Fernbedienung geliefert. Ist eh immer 20°C. Raumtemp-Soll bei Kat. Bedien (3306) reicht.
 Kesseltemp Soll (A303) und Ist (0802) von kat. Sensor an Anfang Kat. Kessel verschoben.
+
+18.05.19
+Bei Adresse 3302 (Sparbetrieb) Beschreibung vervollständigt. Kategorie von "Bedien" auf "Sensor" geändert (damit Wert mitgeloggt wird).
+Bei Adresse 3303 (Partybetrieb) Beschreibung ergänzt, Kategorie ebenfalls von "Bedien" auf "Sensor".
+Adresse 0842 taucht zweimal auf: 
+1. Bei category="Sensor" mit shortcut="Test" und description="Testparameter Pumpe externe Erweiterung".
+2. Bei category="Other" mit shortcut="Pumpe (M2)" und description="Pumpe Heizkreis 2 Status (Externe Erweiterung) (Sensor)".
+Nr. 2 gelöscht, dessen Inhalt mit Kategorie "Sensor" als Nr. 1 eingefügt.
