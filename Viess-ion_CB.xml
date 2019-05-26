@@ -41,7 +41,7 @@ Stand 11.02.19 17:45 Uhr
 			<max>1</max>
 			<unit>state</unit>
 		</address>
-		<address addr="7660" access="R" shortcut="Pumpe stat (A1)" description="Betriebszustand der internen Umwälzpumpe" category="Sensor">
+		<address addr="7660" access="R" shortcut="Pumpe Stat (A1)" description="Betriebszustand der internen Umwälzpumpe" category="Sensor">
 			<len>1</len>
 			<div>1</div>
 			<check>1</check>
@@ -57,6 +57,22 @@ Stand 11.02.19 17:45 Uhr
 			<max>100</max>
 			<unit>%</unit>
 		</address>
+		<address addr="3906" access="R" shortcut="Pumpe Stat (M2)" description="0...Aus, 1...Ein&#xA;Status der Pumpe für Heizkreis M2" category="Sensor">
+			<len>1</len>
+			<div>1</div>
+			<check>1</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>state</unit>
+		</address>
+		<address addr="0842" access="R" shortcut="Pumpe Stat (M2) ext" description="Pumpe Heizkreis 2 Status (Externe Erweiterung) (Sensor)" category="Sensor">
+			<len>1</len>
+			<div>1</div>
+			<check>0</check>
+			<min>0</min>
+			<max>1</max>
+			<unit>state</unit>
+		</address>
 		<address addr="55D3" access="R" shortcut="Verbrauch" description="Leistung des Brenners (mit/ohne??? Verluste)" category="Sensor">
 			<len>1</len>
 			<div>1</div>
@@ -64,14 +80,6 @@ Stand 11.02.19 17:45 Uhr
 			<min>0</min>
 			<max>76</max>
 			<unit>%</unit>
-		</address>
-		<address addr="3906" access="R" shortcut="Pumpe stat (M2)" description="0...Aus, 1...Ein&#xA;Status der Pumpe für Heizkreis M2" category="Sensor">
-			<len>1</len>
-			<div>1</div>
-			<check>1</check>
-			<min>0</min>
-			<max>1</max>
-			<unit>state</unit>
 		</address>
 		<address addr="3900" access="R" shortcut="VL ist (M2)" description="Kesseltemperatur Soll-Wert zur Kompensation von ???" category="Sensor">
 			<len>2</len>
@@ -224,14 +232,6 @@ Stand 11.02.19 17:45 Uhr
 			<min>0</min>
 			<max>0</max>
 			<unit>!</unit>
-		</address>
-		<address addr="0842" access="R" shortcut="Pumpe (M2)" description="Pumpe Heizkreis 2 Status (Externe Erweiterung) (Sensor)" category="Sensor">
-			<len>1</len>
-			<div>1</div>
-			<check>0</check>
-			<min>0</min>
-			<max>1</max>
-			<unit>state</unit>
 		</address>
 		<address addr="3520" access="W" shortcut="FB an HK2" description="0...keine FB auf Heizkreis, 2...FB auf Heizkreis" category="Bedien">
 			<len>1</len>

@@ -29,3 +29,10 @@ Adresse 0842 taucht zweimal auf:
 1. Bei category="Sensor" mit shortcut="Test" und description="Testparameter Pumpe externe Erweiterung".
 2. Bei category="Other" mit shortcut="Pumpe (M2)" und description="Pumpe Heizkreis 2 Status (Externe Erweiterung) (Sensor)".
 Nr. 2 gelöscht, dessen Inhalt mit Kategorie "Sensor" als Nr. 1 eingefügt.
+
+26.05.19
+Einträge mit 'shortcut="Pumpe' umsortiert: Adresse 3906 (Status Pumpe HK M2) und 0842 (Status Pumpe HK M2 ext. Erweiterung) jetzt nebeneinander. Adresse 55D3 (Verbrauch) jetzt nach den Pumpendaten. Bezeichnung verbessert.
+Unterschied zw. Adresse 3906 und 0842 unklar - haben jedenfalls nicht den gleichen Wert. 3906 hat den Wert 1, wenn auch Adr. 0A10 (Ventil) den Wert 1 ("heizen") hat.
+XML-Datei auf CX erneuert.
+
+
